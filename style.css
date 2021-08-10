@@ -1,0 +1,142 @@
+/* GLOBAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover,
+button:hover {
+  color: hotpink;
+}
+
+button {
+  transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 0px hotpink;
+  animation: rotate 2s linear infinite;
+}
+
+nav,
+header,
+main,
+footer,
+section {
+  padding: 1rem;
+}
+
+nav,
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+/* Navigation Bar */
+
+nav a {
+    font-weight: bold;
+}
+
+nav {
+    border-bottom: 2px solid black;
+}
+
+/* Header */
+
+header h1 {
+    font-size: 4rem;
+    margin: 2rem;
+}
+
+header p {
+    text-align: center;
+    max-width: 900px;
+    font-size: 1.5rem;
+}
+
+ header button {
+     font-size: 1.25rem;
+     background: white;
+     border: 2px solid;
+     border-radius: 1rem;
+     padding: 0.5rem 1rem ;
+     margin: 2rem;
+ }
+
+ /* This CSS is for flexbox column center purpose */
+ header, main, section, main div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+
+ /* Projects */
+ main article {
+     border: 2px solid;
+ }
+
+ main article p {
+     margin: 1.5rem;
+ }
+
+ main h2 {
+     margin-bottom: 1.5rem;
+ }
+
+ main > div {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+ }
+
+ main article div {
+   display: flex;
+   flex-direction: column;
+   max-width: fit-content;
+ }
+
+
+ /* Footer */
+
+ footer a {
+     font-size: 2rem;
+ }
+
+ /* Project page 2 */
+
+
+
+ .projectParagraph {
+     font-size: 1.25rem;
+     margin-bottom: 1rem;
+ }
+
+ section div h2 {
+     font-size: 2rem;
+     color: hotpink
+ }
+
+ #headerProject {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+ }
+ 
+ @keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
